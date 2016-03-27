@@ -1,0 +1,18 @@
+{
+	"version": "1.0.0",
+	"name": "ang4",
+	"private": true,
+	"devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "3.9.1",
+    "gulp-typescript": "^2.8.0"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-beta.12",
+    "es6-shim": "0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6",
+    "systemjs": "0.19.6"
+  }
+}
