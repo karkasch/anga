@@ -2,7 +2,7 @@
 var gulp = require('gulp');
 
 var tsFiles = [
-    "./wwwroot/main.ts",
+    "./wwwroot/**/*.ts",
     "./node_modules/angular2/typings/browser.d.ts"
 ];
 
@@ -17,8 +17,8 @@ gulp.task("ts", function () {
     return tsResult.js.pipe(gulp.dest("."));
 });
 
-gulp.task("test", function () {
-    console.log(this);
+gulp.task("watch", function () {
+    return gulp.watch(tsFiles, ["ts"]);
 })
 
 gulp.task('default', ["ts"]);

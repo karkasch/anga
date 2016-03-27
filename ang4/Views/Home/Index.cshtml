@@ -6,9 +6,10 @@
 <head>
     <title>Anga 4</title>
     <meta charset="utf-8" />
+    <base href="/">
 </head>
 <body>
-    <hello-app></hello-app>
+    <app></app>
 
     <!-- ES6-related imports -->
     <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
@@ -20,9 +21,10 @@
     </script>
     <script src="/node_modules/rxjs/bundles/Rx.js"></script>
     <script src="/node_modules/angular2/bundles/angular2.min.js"></script>
+    <script src="/node_modules/angular2/bundles/router.dev.js"></script>
     <script>
     //bootstrap the Angular2 application
-    System.import('wwwroot/main').catch(console.log.bind(console));
+    System.import('wwwroot/app').catch(console.log.bind(console));
     </script>
 </body>
 </html>

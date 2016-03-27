@@ -1,4 +1,4 @@
 ang4/node_modules/
 packages/
-ang4/wwwroot/*.js.map
-ang4/wwwroot/*.js
+ang4/wwwroot/**/*.js.map
+ang4/wwwroot/**/*.js
