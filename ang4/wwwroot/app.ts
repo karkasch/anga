@@ -7,7 +7,7 @@ import { DetailsComponent } from "./details/details.component";
 @Component({
     selector: "app",
     template: `
-        <header>App:{{name}} - 
+        <header>App:{{name}} - </header>
         <main><router-outlet></router-outlet></main>
     `,
     directives: [ROUTER_DIRECTIVES]
