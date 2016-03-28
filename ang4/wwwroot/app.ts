@@ -1,7 +1,7 @@
 ﻿/// <reference path="../node_modules/angular2/platform/browser.d.ts" />
 import { bootstrap }    from 'angular2/platform/browser';
-import { Component } from 'angular2/core';
-import { RouteConfig, RouterOutlet, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+import { Component, provide } from 'angular2/core';
+import { RouteConfig, RouterOutlet, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Location, LocationStrategy, HashLocationStrategy } from 'angular2/router';
 import { DetailsComponent } from "./details/details.component";
 
 @Component({
@@ -19,4 +19,4 @@ export class App {
     name = "Home"
 }
 
-bootstrap(App, [ROUTER_PROVIDERS]);
+bootstrap(App, [ROUTER_PROVIDERS, provide(LocationStrategy, { useClass: HashLocationStrategy }) ]);
