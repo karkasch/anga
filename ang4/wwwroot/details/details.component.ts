@@ -1,13 +1,13 @@
-﻿import {Component} from 'angular2/core';
+﻿import { Component } from 'angular2/core';
+//import { LeftPanelComponent } from "./leftpanel/left-panel.component";
 
-@Component({
-    selector: "details-page",
-    template: `
-        <h1>Details</h1>
-        <div>1</div>
-        <div>2</div>
-    `
-})
-export class DetailsComponent {
-
-}
+//export module Details {
+    @Component({
+        selector: "details-page",
+        templateUrl: "./wwwroot/details/details.html",
+        //directives: [LeftPanelComponent]
+    })
+    export class DetailsComponent {
+        test: string = "From DetailsComponent";
+    }
+//}
