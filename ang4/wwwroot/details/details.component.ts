@@ -8,6 +8,6 @@ import { LeftPanelComponent } from "./leftpanel/left-panel.component";
         directives: [ LeftPanelComponent ]
     })
     export class DetailsComponent {
-        test: string = "From DetailsComponent";
+        title: string = "Details";
     }
 //}
