@@ -6,6 +6,8 @@
         templateUrl: "./wwwroot/details/leftpanel/left-panel.html"
     })
     export class LeftPanelComponent {
-        test: string = "In LeftPanelComponent"
+        test: string = "In LeftPanelComponent";
     }
 //}
+
+// templateUrl: "./wwwroot/details/leftpanel/left-panel.html"
