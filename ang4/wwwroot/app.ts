@@ -4,6 +4,7 @@ import { Component, provide } from 'angular2/core';
 import { RouteConfig, RouterOutlet, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Location, LocationStrategy, HashLocationStrategy } from 'angular2/router';
 
 import { DetailsComponent } from "./details/details.component";
+import { DetailsItemComponent } from "./details/details-item.component";
 //import { LeftPanelComponent } from "./details/leftpanel/left-panel.component";
 
 @Component({
@@ -16,6 +17,7 @@ import { DetailsComponent } from "./details/details.component";
 })
 @RouteConfig([
         { path: '/details', name: 'Details', component: DetailsComponent, useAsDefault: true }
+        //{ path: '/details/:id', name: 'DetailsItem', component: DetailsItemComponent }
 ])
 export class App {
     name = "Home"
