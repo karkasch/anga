@@ -261,6 +261,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\app.ts" />
+    <TypeScriptCompile Include="wwwroot\details\details-item.component.ts" />
     <TypeScriptCompile Include="wwwroot\details\details.component.ts" />
     <TypeScriptCompile Include="wwwroot\details\leftpanel\left-panel.component.ts" />
   </ItemGroup>
