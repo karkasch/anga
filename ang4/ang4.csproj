@@ -250,6 +250,7 @@
     </Content>
     <Content Include="tsconfig.json" />
     <Content Include="wwwroot\details\details.html" />
+    <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\details\leftpanel\left-panel.html" />
   </ItemGroup>
   <ItemGroup>
@@ -262,6 +263,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\app.ts" />
     <TypeScriptCompile Include="wwwroot\details\details-item.component.ts" />
+    <TypeScriptCompile Include="wwwroot\details\details-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\details\details.component.ts" />
     <TypeScriptCompile Include="wwwroot\details\leftpanel\left-panel.component.ts" />
   </ItemGroup>

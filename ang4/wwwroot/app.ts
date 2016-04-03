@@ -9,18 +9,23 @@ import { DetailsItemComponent } from "./details/details-item.component";
 
 @Component({
     selector: "app",
+    //templateUrl: "./wwwroot/index.html",
     template: `
-    <header>App:{{name}} - </header>
-    <main><router-outlet></router-outlet></main>
+<header>
+    App: {{title}}
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>
 `,
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-        { path: '/details', name: 'Details', component: DetailsComponent, useAsDefault: true }
+        { path: '/details/...', name: 'Details', component: DetailsComponent, useAsDefault: true }
         //{ path: '/details/:id', name: 'DetailsItem', component: DetailsItemComponent }
 ])
 export class App {
-    name = "Home"
+    title = "Home"
 }
 
 
