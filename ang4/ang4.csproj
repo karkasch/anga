@@ -266,6 +266,10 @@
     <TypeScriptCompile Include="wwwroot\details\details-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\details\details.component.ts" />
     <TypeScriptCompile Include="wwwroot\details\leftpanel\left-panel.component.ts" />
+    <TypeScriptCompile Include="wwwroot\paths\list-item-details.component.ts" />
+    <TypeScriptCompile Include="wwwroot\paths\list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\paths\list-item.component.ts" />
+    <TypeScriptCompile Include="wwwroot\paths\paths.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

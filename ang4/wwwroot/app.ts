@@ -4,6 +4,7 @@ import { Component, provide } from 'angular2/core';
 import { RouteConfig, RouterOutlet, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Location, LocationStrategy, HashLocationStrategy } from 'angular2/router';
 
 import { DetailsComponent } from "./details/details.component";
+import { PathsComponent } from "./paths/paths.component";
 import { DetailsItemComponent } from "./details/details-item.component";
 //import { LeftPanelComponent } from "./details/leftpanel/left-panel.component";
 
@@ -21,7 +22,8 @@ import { DetailsItemComponent } from "./details/details-item.component";
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-        { path: '/details/...', name: 'Details', component: DetailsComponent, useAsDefault: true }
+        //{ path: '/details/...', name: 'details', component: DetailsComponent },
+        { path: '/paths/...', name: 'Paths', component: PathsComponent, useAsDefault: true }
         //{ path: '/details/:id', name: 'DetailsItem', component: DetailsItemComponent }
 ])
 export class App {
